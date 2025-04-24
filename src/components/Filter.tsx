@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-function Filter() {
+const Filter: FC = () => {
   return (
     <div>Filter</div>
   )

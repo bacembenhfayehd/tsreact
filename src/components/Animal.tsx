@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-function Animal() {
+interface AnimalCardProps {
+    name:string,
+    race:string,
+    city:string,
+    image:string
+}
+
+const Animal:React.FC<AnimalCardProps> = ({name,race,city,image}) => {
   return (
-    <div>Animal</div>
+    <div><h2>{name}</h2>
+    <h3>{city}</h3>
+    <h4>{race}</h4>
+    <img src={image} alt="" /></div>
   )
 }
 
