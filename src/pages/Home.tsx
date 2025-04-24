@@ -16,7 +16,7 @@ const Home: FC = () => {
     setFiltredAnimal(filtred);
   }
 
-  
+
   const handelDelete = (id:number) => {
     setAnimals(animals.filter((animal) => animal.id !== id));
     setFiltredAnimal(filtredAnimals.filter((animal) => animal.id !== id));
@@ -34,7 +34,7 @@ const Home: FC = () => {
             image={animal.image}
             city={animal.city}
             race={animal.race}
-            ondelete={() => handelDelete(animal.id)}
+            onDelete={() => handelDelete(animal.id)}
           />
         ))}
       </div>
